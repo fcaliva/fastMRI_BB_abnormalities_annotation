@@ -15,17 +15,17 @@ Similar bounding boxes were placed in the two sub-regions of meniscus: medial an
 
 
 In summary the abnormalities annotation follows this naming convention:
-'CartMedFem' --> Medial Femoral Cartilage Lesion
-'CartLatFem' --> Lateral Femoral Cartilage Lesion
-'CartMedTib' --> Medial Tibial Cartilage Lesion
-'CartLatTib' --> Lateral Tibial Cartilage Lesion
-'BML_Med_Fem' -->Bone Marrow Lesion in Medial Femur subjacent to articular cartilage
-'BML_Lat_Fem' -->Bone Marrow Lesion in Lateral Femur subjacent to articular cartilage
-'BML_Med_Tib' -->Bone Marrow Lesion in Medial Tibia subjacent to articular cartilage
-'BML_Lat_Tib' -->Bone Marrow Lesion in Lateral Tibia subjacent to articular cartilage
-'Med_Men' --> Lesion in Medial Meniscus
-'Lat_Men' --> Lesion in Lateral Meniscus
-'Cyst'  
+<br>'CartMedFem' --> Medial Femoral Cartilage Lesion
+<br>'CartLatFem' --> Lateral Femoral Cartilage Lesion
+<br>'CartMedTib' --> Medial Tibial Cartilage Lesion
+<br>'CartLatTib' --> Lateral Tibial Cartilage Lesion
+<br>'BML_Med_Fem' -->Bone Marrow Lesion in Medial Femur subjacent to articular cartilage
+<br>'BML_Lat_Fem' -->Bone Marrow Lesion in Lateral Femur subjacent to articular cartilage
+<br>'BML_Med_Tib' -->Bone Marrow Lesion in Medial Tibia subjacent to articular cartilage
+<br>'BML_Lat_Tib' -->Bone Marrow Lesion in Lateral Tibia subjacent to articular cartilage
+<br>'Med_Men' --> Lesion in Medial Meniscus
+<br>'Lat_Men' --> Lesion in Lateral Meniscus
+<br>'Cyst'  
 
 ## Design of the Proposed Model
 ![model](images/adversarialattack_net.png)
