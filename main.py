@@ -5,9 +5,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import argparse
 import os
-
 PARSER = argparse.ArgumentParser()
-PARSER.add_argument('--fastMRI', default='/data/bigbone5/vcheng/fastMRI/datasets/',
+PARSER.add_argument('--fastMRI', default='dataset/',
                     help='path/to/fastMRI/dataset/')
 PARSER.add_argument('--annotation', default='fastMRI_csv/',
                     help='path/to/fastMRI/annotation/')
@@ -19,15 +18,17 @@ PARSER.set_defaults(save_png=True)
 PARSER.add_argument('--display_on_screen', dest='display_on_screen', action='store_true',
                     help='choose whether or not to display annotation on screed.')
 PARSER.set_defaults(display_on_screen=False)
+PARSER.add_argument('--run_example', dest='run_example', action='store_true',
+                    help='choose whether or not to run the example.')
+PARSER.set_defaults(run_example=False)
 PARSER.add_argument('--save_in', default='BB_png',
                     help='path/to/where/to/save/')
 
 args = PARSER.parse_known_args()[0]
-
 ## load the annotation
 split = args.split
 if args.save_png:
-    where_to_save = f'{args.save_in}_{split}/'
+    where_to_save = f'{args.save_in}/{split}/'
     try:
         print(f'PNG files will be saved in {where_to_save}')
         os.makedirs(where_to_save)
@@ -45,7 +46,10 @@ labelsToIdx = {value:idx for idx,value in enumerate(labels)}
 colors = ['r','r','c','c','m','m','w','w','y','y','b']
 
 # extract annotation for MRI idx
-show_vol = range(len(filenames))
+if args.run_example:
+    show_vol =[1]
+else:
+    show_vol =range(len(filenames))
 for idx in show_vol:
     print(f"Inspecting file: {filenames[idx]}")
 
@@ -88,7 +92,7 @@ for idx in show_vol:
             img = MRI[sl-1]
             ax.imshow(img, cmap = 'gray')
             ax.add_patch(rect); plt.axis('off')
-            plt.title(f"{filenames[idx]}, BB: {bb_lab[ii]}, SL {sl}")
+            plt.title(f"{filenames[idx]}, BB: {bb_lab[ii]}, SL {sl}", fontsize=18)
         if args.save_png:
             plt.savefig(f'{where_to_save}{filenames[idx]}_{sl}.png',dpi=400, bbox_inches = 'tight')
         if args.display_on_screen:
