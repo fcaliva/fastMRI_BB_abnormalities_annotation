@@ -2,7 +2,7 @@
 
 This repository contains the abnormalities annotation of the knee fastMRI dataset, which were utilized in our paper:<br>["Adversarial Robust Training of Deep Learning MRI Reconstruction Models"](https://pdf), which was recently submitted to the Medical Imaging with Deep Learning (MIDL) 2020 Conference Special Issue at the Machine Learning for Biomedical Imaging (MELBA) Journal.
 
-This work extends our paper ["Addressing The False Negative Problem of MRI Reconstruction Networks by Adversarial Attacks and Robust Training"](https://2020.midl.io/papers/cheng20.html) by Cheng, K. et al.,2020 which was Awarded Best Paper at MIDL 2020 Conference.
+This work extends our paper ["Addressing The False Negative Problem of MRI Reconstruction Networks by Adversarial Attacks and Robust Training"](https://2020.midl.io/papers/cheng20.html) by Cheng, K., Caliva,F., et al.,2020 which was Awarded Best Paper at MIDL 2020 Conference.
 
 ## Abstract
 Deep Learning has shown potential in accelerating Magnetic Resonance Image acquisition and reconstruction. Nevertheless, there is a dearth of tailored methods to guarantee that the reconstruction of small features is achieved with high fidelity. In this work, we employ adversarial attacks to generate small synthetic perturbations that when added to the input MRI, they are not reconstructed by a trained DL reconstruction network. Then, we use robust training to increase the network's sensitivity to small features and encourage their reconstruction.
@@ -60,5 +60,13 @@ Example:
 ```
 python main.py --fastMRI '/data/bigbone5/vcheng/fastMRI/datasets/' --annotation 'fastMRI_csv/' --split 'val' --save_in 'BB_png'
 ```
-
+## Citation
 If you use this annotation for your research, please consider citing our paper.
+```
+@article{caliva2020adversarial,
+  title={Adversarial Robust Training in MRI Reconstruction},
+  author={Caliv{\'a}, Francesco and Cheng, Kaiyang and Shah, Rutwik and Pedoia, Valentina},
+  journal={arXiv preprint arXiv:2011.00070},
+  year={2020}
+}
+```
