@@ -1,0 +1,5 @@
+Abnormality-classification/experiments/
+Abnormality-classification/inference/
+Abnormality-classification/src/__pycache__/
+Abnormality-classification/*.pyc
+*.pyc
