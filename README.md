@@ -6,7 +6,7 @@ This work extends our paper ["Addressing The False Negative Problem of MRI Recon
 
 ## Update
 Please check out (https://github.com/victorychain/FNAF-fastMRI) for the official FNAF implementation.
-Soon we will release code and pre-trained model of the abnormality classification network. 
+Code and pre-trained model of the abnormality classification network are now available in `Abnormalty-classification/` 
 
 ## Abstract
 Deep Learning has shown potential in accelerating Magnetic Resonance Image acquisition and reconstruction. Nevertheless, there is a dearth of tailored methods to guarantee that the reconstruction of small features is achieved with high fidelity. In this work, we employ adversarial attacks to generate small synthetic perturbations that when added to the input MRI, they are not reconstructed by a trained DL reconstruction network. Then, we use robust training to increase the network's sensitivity to small features and encourage their reconstruction.
