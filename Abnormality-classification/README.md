@@ -14,17 +14,22 @@ Patches can be extracted from reconstructed images using the code in `src/extrac
 
 ---
 
-## Model checkpoints can be downloaded from:
-    squeeze net trained using patches 32x32 
+## Model checkpoints can be downloaded from:    
+** SqueezeNet[1] trained using patches 32x32**
+
     https://ucsf.box.com/s/rzok5z0fx7hcz0rl7qvraujpvhuu9j6p
-    squeeze net trained using patches 64x64
+** SqueezeNet[1] trained using patches 64x64
+    
     https://ucsf.box.com/s/rzok5z0fx7hcz0rl7qvraujpvhuu9j6p 
+
+[1] Iandola, Forrest N., et al. "SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and< 0.5 MB model size." arXiv preprint arXiv:1602.07360 (2016).
 
 **Disclosure**: We think it's important to remark that both models were trained using the fully-sampled from the fastMRI dataset.
 As reported in our manuscript in Section 5 Limitation, we observed a noticeable drop in classification performance when images reconstructed with a significantly better reconstruction method, such as I-RIM were fed. This drop in performance can be associated to a covariate shift resulting from different image reconstruction techniques; as part of our future work we will analyze whether domain adaptation techniques would mitigate the drop in performance which was observed.
 
 ## Run
-Our paper results can be replicated with the following commands:
+
+The Results in our paper can be replicated with the following commands:
 ---
 **Using patches of size 32x32**
 
