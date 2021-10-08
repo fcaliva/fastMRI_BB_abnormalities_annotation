@@ -1,6 +1,6 @@
 # Adversarial Robust Training of Deep Learning MRI Reconstruction Models
 
-This repository contains the abnormalities annotation of the knee fastMRI dataset, which were utilized in our paper:<br>["Adversarial Robust Training of Deep Learning MRI Reconstruction Models"](https://pdf), which was recently submitted to the Medical Imaging with Deep Learning (MIDL) 2020 Conference Special Issue at the Machine Learning for Biomedical Imaging (MELBA) Journal.
+This repository contains the abnormalities annotation of the knee fastMRI dataset, which were utilized in our paper:<br>["Adversarial Robust Training of Deep Learning MRI Reconstruction Models"](https://arxiv.org/abs/2011.00070v3), which was recently submitted to the Medical Imaging with Deep Learning (MIDL) 2020 Conference Special Issue at the Machine Learning for Biomedical Imaging (MELBA) Journal.
 
 This work extends our paper ["Addressing The False Negative Problem of MRI Reconstruction Networks by Adversarial Attacks and Robust Training"](https://2020.midl.io/papers/cheng20.html) by Cheng, K., Caliva,F., et al.,2020 which was Awarded Best Paper at MIDL 2020 Conference. 
 
